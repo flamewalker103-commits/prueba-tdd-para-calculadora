@@ -26,3 +26,9 @@ class Calculadora:
     def potencia(self, base: float, exponente: float) -> float:
         """Calculates and returns the power of base raised to exponente."""
         return base ** exponente
+
+    def modulo(self, a: float, b: float) -> float:
+        """Calculates and returns the modulus of a and b. Raises ValueError if b is zero."""
+        if b == 0:
+            raise ValueError('No se puede calcular el módulo con divisor cero')
+        return a % b
