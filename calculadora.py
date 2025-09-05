@@ -15,7 +15,7 @@ class Calculadora:
         """Calculates and returns the quotient of a and b. Raises ValueError if b is zero."""
         if b == 0:
             raise ValueError('No se puede dividir entre cero')
-        return a / b
+        return a / b  # Ensuring correct usage of float division
 
     def raiz_cuadrada(self, a: float) -> float:
         """Calculates and returns the square root of a. Raises ValueError if a is negative."""
