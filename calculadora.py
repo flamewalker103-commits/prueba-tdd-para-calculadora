@@ -22,3 +22,7 @@ class Calculadora:
         if a < 0:
             raise ValueError('No se puede calcular la raíz cuadrada de un número negativo')
         return a ** 0.5
+
+    def potencia(self, base: float, exponente: float) -> float:
+        """Calculates and returns the power of base raised to exponente."""
+        return base ** exponente
