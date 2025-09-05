@@ -30,5 +30,5 @@ class Calculadora:
     def modulo(self, a: float, b: float) -> float:
         """Calculates and returns the modulus of a and b. Raises ValueError if b is zero."""
         if b == 0:
-            raise ValueError('No se puede calcular el módulo con divisor cero')
+            raise ValueError('No se puede calcular el módulo con un divisor de cero')
         return a % b
