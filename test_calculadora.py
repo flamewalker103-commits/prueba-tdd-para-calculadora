@@ -18,7 +18,7 @@ class TestCalculadora(unittest.TestCase):
     def test_division(self):
         self.assertEqual(self.calc.division(6, 2), 3)
 
-    def test_division_raises_valueerror_on_zero(self):
+    def test_division_raises_value_error_on_zero(self):
         with self.assertRaises(ValueError):
             self.calc.division(1, 0)
 
