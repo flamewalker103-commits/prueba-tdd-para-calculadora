@@ -16,3 +16,9 @@ class Calculadora:
         if b == 0:
             raise ValueError('No se puede dividir entre cero')
         return a / b
+
+    def raiz_cuadrada(self, a: float) -> float:
+        """Returns the square root of a. Raises ValueError if a is negative."""
+        if a < 0:
+            raise ValueError('No se puede calcular la raíz cuadrada de un número negativo')
+        return a ** 0.5
